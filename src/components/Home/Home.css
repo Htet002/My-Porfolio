@@ -1,0 +1,159 @@
+span{
+    color: rgb(2, 2, 2);
+}
+.home_img{
+   
+    max-width: 100%;
+    height: 22vh;
+    
+}
+
+
+@keyframes rotate {
+    from { -webkit-transform: rotate(0deg) } 
+    to { -webkit-transform: rotate(360deg) } 
+}
+
+/*.btn{
+    background-color: rgb(245, 79, 107);
+    max-width: 120px;
+    font-size: small;
+    color: azure;
+}
+
+.btn:hover{
+    color: rgb(244, 255, 196);
+}*/
+
+.home{
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro{
+    max-width: 540px;
+    text-align: center;
+
+}
+
+.home_img {
+    margin-bottom: 1.5rem;
+}
+
+.my_name{
+    font-size: var(--h1-font-size);
+    font-weight: var(--fold-semibold);
+    margin-bottom: 0.5rem;
+}
+.social{
+    display: flex;
+    column-gap: 1.3rem;
+    position: relative;
+    justify-content: center
+}
+.social-link{
+    color: var(--title-color);
+    font-size: 1.3rem;
+    transition: .3s;
+}
+
+.social-link :hover{
+    color: hsl(43,100%,68%);
+}
+
+.scroll{
+     position: absolute;
+     bottom: 2.5rem; 
+     left: 0;
+     width: 100%;
+}
+.home_scroll{
+    font-size: var(--small-font-size);
+}
+
+.mouse{
+    border: 2px solid var(--text-color);
+    display: flex;
+    height: 1.6rem;
+    width: 1.25rem;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 1.3rem;
+}
+
+.wheel{
+      display: block;
+      margin: auto;
+      border: 2px solid var(--text-color);
+      border-radius: 2px;
+      animation: updown 2s ease infinite;
+}
+
+@keyframes updown {
+    0% {
+      transform: translateY(-100%);
+    }
+  
+    50% {
+      transform: translateY(100%);
+    }
+  
+    100% {
+      transform: translateY(-100%);
+    }
+  }
+
+
+.shapes{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.shape{
+    position: absolute;
+}
+
+.s1{
+    left: 2%;
+    top: 10%;
+}
+.s2{
+    left: 18%;
+    top: 30%;
+}
+
+.s3{
+    left:5%;
+    bottom:30%;
+}
+.s4{
+    left: 2%;
+    bottom:10%;
+}
+.s5{
+    left: 64%;
+    bottom: 10%;
+}
+.s6{
+    top: 10%;
+    left:78%;
+}
+.s7{
+    top: 1%;
+    left: 50%;
+}
+
+
+@media screen and (max-width:1024px) {
+    .social-link{
+        font-size: 1.12rem;
+    }
+    
+    
+}

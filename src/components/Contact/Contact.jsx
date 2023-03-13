@@ -1,0 +1,54 @@
+import React from "react";
+import './Contact.css'
+
+const Contact =()=>{
+    return(
+        <section className="contact container section" id="contact">
+            
+            <h2 className="section_title">Contact</h2>
+        <div className="contact_container grid">
+            <div className="contact_info">
+                <h3 className="contact_title">
+                    let's talk about something
+                </h3>
+                <p className="contact_detail">
+                    Send me email
+                </p>
+            </div>
+       
+        <form action=""className="contact_form">
+            <div className="contact_form-group">
+                <div className="contact_form-div">
+                    <input type="text" className="contact_form-input"
+                    placeholder="Please type your name" />
+                  
+                </div>
+                
+                <div className="contact_form-div">
+                      
+                <input type="email" className="contact_form-input"
+                    placeholder="Please type your eamil" />
+                </div>
+                    
+            </div>
+                <div className="contact_form-div ">
+                    <input type="text" className="contact_form-input"
+                    placeholder="Please type your subject" />
+                </div>
+                <div className="contact_form-div  contact_form-area">
+                    <textarea name="" id="" cols="30" rows="10"
+                    className="contact_form-input" placeholder="Write your message">
+                    
+                    </textarea>
+                 
+                </div> 
+               <a href="mailto:htetwaiyantun9999@gmail.com" className="btn">Send Message</a>
+              
+        </form>
+        
+        </div>
+        
+        </section>
+    )
+}
+export default Contact

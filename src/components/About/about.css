@@ -1,0 +1,141 @@
+.about_img{
+    max-width: 100%;
+    height: 22vh;
+}
+.download{
+    display: block;
+    margin: auto;
+}
+.about_container{
+    grid-template-columns: 3fr 9fr;
+    column-gap: 1.875rem;
+    display: grid;
+}
+
+.about_data{
+    padding: 1.875rem;
+    background-color: var(--container-color);
+    box-shadow: var(--shadow);
+    border-radius: var(--border-radius);
+    grid-template-columns: repeat(2,1fr);
+    position: relative;
+    column-gap: 2rem;
+}   
+
+.about_data::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right:15px solid var(--container-color);
+    position:absolute;
+    left: -0.1rem;
+    top:20%;
+}
+
+.description{
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+.about_skill{
+    row-gap: 1.25rem;
+}
+.skill_title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill_name{
+    font-size: var(--normal-fontsize);
+    font-weight: var(--font-medium);
+}
+
+.skill_number{
+    line-height:1.2;
+}
+
+.skill_bar,
+.skill_percentage{
+    height: 7px;
+    border-radius: 0.2rem;
+
+}
+
+.skill_bar{
+    background-color: #f1f1f1;
+}
+
+.skill_percentage{
+    display: block;
+}
+
+.JS{
+    width: 70%;
+    background-color: gold;
+}
+.React{
+    width: 50%;
+    background-color: #61dafb;
+}
+
+.Node{
+    width: 20%;
+    background-color: rgb(121, 252, 149);
+}
+
+.Tailwind{
+    width: 30%;
+    background-color: rgb(255, 121, 226);
+}
+.PHP{
+    width: 40%;
+    background-color: rgb(255, 105, 78);
+}
+@media screen and (max-width:1024px) {
+    .about_container{
+        grid-template-columns: 720px;
+        justify-content: center;
+        row-gap: 1.875rem;
+
+    }
+   .about_img{
+    justify-content: center;
+   }
+
+   .about_box{
+    flex-direction: column;
+    row-gap: .5rem;
+    text-align: center;
+   }
+    
+    
+}
+@media screen and (max-width:768px){
+  .about_container{
+    grid-template-columns: 350px;
+    
+
+  }
+   .about_img{
+   justify-self: center;
+    
+   
+   }
+    .btn{
+        display: block;
+        margin: auto;
+        width: 60%;
+        font-size: 14px;
+        text-align: center;
+    }
+    .description{
+        text-align: center;
+    }
+  
+   .about_data{
+     grid-template-columns: 1fr;
+     row-gap: 1.75rem;
+     
+   }
+}

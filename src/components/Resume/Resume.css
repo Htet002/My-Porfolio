@@ -1,0 +1,68 @@
+.resume_container{
+
+    justify-content: center;
+}
+.timeline{
+    background-color: var(--container-color);
+    padding: 1.85rem;
+    border-radius: var(--border-radius);
+    position: relative;
+    box-shadow: var(--shadow);
+}
+
+.timeline_item{
+    position: relative;
+    padding-left: 3.15rem;
+    padding-bottom: 2.15rem;
+}
+.section_title{
+    text-align: center;
+}
+
+.timeline_item:last-child{
+    padding-bottom: 0;
+}
+.timeline_item::before{
+    content: '';
+    width: 1px;
+    height: 100%;
+    background-color: var(--first-color);
+    left: 2.5rem;
+    position: absolute;
+}
+
+
+.timeline .icon-briefcase,
+.timeline .icon-graduation{
+    position: absolute;
+    left: -0.4375rem;
+    top: 0;
+    font-size: var(--h2-font-size);
+    color: var(--first-color);
+    background-color: var(--container-color);
+    padding: 0.43rem 0;
+}
+
+@media screen and (max-width:1024px) {
+    .resume_container{
+        grid-template-columns: 720px;
+        justify-content: center;
+        row-gap: 1.875rem;
+
+    }
+
+    
+    
+}
+@media screen and (max-width:768px){
+  .resume_container{
+    grid-template-columns: 350px;
+    
+
+  }
+
+  .timeline .icon-briefcase,
+.timeline .icon-graduation{
+    font-size: var(--small-font);
+}
+}
